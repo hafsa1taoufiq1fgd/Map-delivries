@@ -6,7 +6,6 @@ var logger = require('morgan');
 const cors = require("cors")
 var indexRouter = require('./routes/index');
 var fileupload = require("express-fileupload");
-
 const fs = require('fs');
 // const express = require('express');
 const multer = require('multer');
@@ -46,8 +45,6 @@ app.use(function (req, res, next) {
 // app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', async (req, res) => {
-
-
   res.json("Hey")
 
 });

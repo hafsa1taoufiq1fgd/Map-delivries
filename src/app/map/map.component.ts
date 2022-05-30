@@ -78,7 +78,7 @@ export class MapComponent implements AfterViewInit {
               iconUrl: 'assets/green.png',
               iconSize: [8, 8] 
           });
-            var newMarker = new L.marker([point.lon,point.lat], {icon: greenIcon});
+            var newMarker = new L.marker([point.lat,point.lon], {icon: greenIcon});
             newMarker.bindPopup("id Commande: "+point.id_commande+"<br> Client:"+point.Name_Client)
             newMarker.addTo(this.map);
           })
